@@ -25,3 +25,17 @@ let myAge = 20;
 console.log(myAge);
 myAge = 30;
 console.log(myAge); // No error
+
+
+// let can be updated
+let myAge = 20;
+console.log(myAge);
+myAge = 30;
+console.log(myAge); // No error
+
+
+// const cannot be updated
+const myAge = 20;
+console.log(myAge);
+myAge = 30;
+console.log(myAge); // Error
