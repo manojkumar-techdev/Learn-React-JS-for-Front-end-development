@@ -60,3 +60,9 @@ console.log(message);
 
 
 // const is block-scoped
+let age = 20;
+if (age > 18) {
+    const message = "You can vote!";
+    console.log(message); 
+}
+console.log(message);
