@@ -90,3 +90,15 @@ function addNums() {
 
 addNums();
 console.log(a);
+
+
+// const is function-scoped
+function addNums() {
+    const a = 10;
+    const b = 20;
+    const result = a + b;
+    console.log(result);
+}
+
+addNums();
+console.log(a);
