@@ -39,3 +39,16 @@ const myAge = 20;
 console.log(myAge);
 myAge = 30;
 console.log(myAge); // Error
+
+
+// var is not block-scoped
+let age = 20;
+if (age > 18) {
+    var message = "You can vote!";
+    console.log(message); 
+}
+console.log(message);
+
+
+// var is not block-scoped
+// var is not block-scoped
