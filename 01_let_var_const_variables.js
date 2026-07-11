@@ -78,3 +78,15 @@ function addNums() {
 
 addNums();
 console.log(a);
+
+
+// let is function-scoped
+function addNums() {
+    let a = 10;
+    let b = 20;
+    let result = a + b;
+    console.log(result);
+}
+
+addNums();
+console.log(a);
