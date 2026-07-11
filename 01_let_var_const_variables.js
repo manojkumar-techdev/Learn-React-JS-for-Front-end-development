@@ -66,3 +66,15 @@ if (age > 18) {
     console.log(message); 
 }
 console.log(message);
+
+
+// var is function-scoped
+function addNums() {
+    var a = 10;
+    var b = 20;
+    var result = a + b;
+    console.log(result);
+}
+
+addNums();
+console.log(a);
