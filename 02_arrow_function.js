@@ -35,3 +35,10 @@ function sayHi() {
 }
 console.log(sayHi());
 
+
+// arrow function with no parameters
+const sayHi = () => {
+  return "Hi there!";
+};
+
+console.log(sayHi());
