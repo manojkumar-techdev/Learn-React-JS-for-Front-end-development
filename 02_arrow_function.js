@@ -19,3 +19,11 @@ function greet(name) {
   return "Hello, " + name;
 }
 console.log(greet("Alice"));
+
+
+// arrow function with single parameter
+const greet = name => {
+  return "Hello, " + name;
+};
+
+console.log(greet("Alice"));
