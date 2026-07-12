@@ -27,3 +27,11 @@ const greet = name => {
 };
 
 console.log(greet("Alice"));
+
+
+// function declaration with no parameter
+function sayHi() {
+  return "Hi there!";
+}
+console.log(sayHi());
+
