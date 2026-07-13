@@ -55,3 +55,8 @@ console.log(multiply(4, 5));      // Output: 20
 // Arrow function with IMPLICIT return (shorter!)
 const multiplyShort = (x, y) => x * y; 
 console.log(multiplyShort(4, 5)); // Output: 20
+
+
+// Example with single parameter and implicit return
+const square = number => number * number;
+console.log(square(9));
