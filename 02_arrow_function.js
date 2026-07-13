@@ -65,3 +65,9 @@ console.log(square(9));
 // arrow function with rreturn values
 const greet = name => "Hello, " + name;
 console.log(greet("Sam"));
+
+
+// transforming array with arrow function
+const numbers = [1, 2, 3, 4];
+const doubled = numbers.map(n => n * 2);
+console.log(doubled);
