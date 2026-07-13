@@ -48,7 +48,10 @@ console.log(sayHi());
 const multiply = (x, y) => {
   return x * y;
 };
+console.log(multiply(4, 5));      // Output: 20
+
 
 
 // Arrow function with IMPLICIT return (shorter!)
 const multiplyShort = (x, y) => x * y; 
+console.log(multiplyShort(4, 5)); // Output: 20
