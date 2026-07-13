@@ -49,3 +49,6 @@ const multiply = (x, y) => {
   return x * y;
 };
 
+
+// Arrow function with IMPLICIT return (shorter!)
+const multiplyShort = (x, y) => x * y; 
