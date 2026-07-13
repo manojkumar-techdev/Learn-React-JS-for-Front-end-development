@@ -42,3 +42,10 @@ const sayHi = () => {
 };
 
 console.log(sayHi());
+
+
+// Arrow function with explicit return
+const multiply = (x, y) => {
+  return x * y;
+};
+
