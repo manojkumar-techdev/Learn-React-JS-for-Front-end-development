@@ -60,3 +60,8 @@ console.log(multiplyShort(4, 5)); // Output: 20
 // Example with single parameter and implicit return
 const square = number => number * number;
 console.log(square(9));
+
+
+// arrow function with rreturn values
+const greet = name => "Hello, " + name;
+console.log(greet("Sam"));
