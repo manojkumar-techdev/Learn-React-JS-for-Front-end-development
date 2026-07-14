@@ -73,3 +73,14 @@ async function handleData() {
 // Call the async function to start the process
 handleData();
 console.log("handleData function called, waiting for async operations...");
+
+
+
+// order of execution in asynchronous way
+console.log("A");
+
+setTimeout(() => {
+  console.log("B");
+}, 0); // Note the 0 millisecond delay
+
+console.log("C");
