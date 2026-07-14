@@ -14,3 +14,17 @@ setTimeout(() => {
 }, 2000);
 
 console.log("Timer End (but timeout is still waiting)");
+
+
+// multiple synchronous functions
+// Don't worry too much about the details, just look at the shape!
+getData(userId, (user) => {
+  console.log("Got user:", user);
+  getPosts(user.id, (posts) => {
+    console.log("Got posts:", posts);
+    getComments(posts[0].id, (comments) => {
+      console.log("Got comments:", comments);
+      // And so on... it keeps nesting deeper!
+    }, (error) => { /* handle comments error */ });
+  }, (error) => { /* handle posts error */ });
+}, (error) => { /* handle user error */ });
