@@ -165,3 +165,13 @@ function calculate(a, b, callback) {
 calculate(10, 20, function (x, y) {
   console.log(x + y);
 });
+
+
+// callback with arrow function
+function calculate(a, b, callback) {
+  callback(a, b);
+}
+
+calculate(10, 20, (x, y) => {
+  console.log(x * y);
+});
