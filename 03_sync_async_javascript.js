@@ -155,3 +155,13 @@ const promise = new Promise((resolve, reject) => {
 promise.then((data) => {
   console.log(data);
 });
+
+
+//callback with anonymous function
+function calculate(a, b, callback) {
+  callback(a, b);
+}
+
+calculate(10, 20, function (x, y) {
+  console.log(x + y);
+});
