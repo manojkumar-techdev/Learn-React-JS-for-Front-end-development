@@ -102,3 +102,23 @@ async function getUserPosts(userId) {
 
 getUserPosts(123);
 console.log("Function called");
+
+
+// error handling
+const promise = new Promise((resolve, reject) => {
+  const success = false;
+
+  if (success) {
+    resolve("Success");
+  } else {
+    reject("Something went wrong!");
+  }
+});
+
+promise
+  .then((result) => {
+    console.log(result);
+  })
+  .catch((error) => {
+    console.log("Error:", error);
+  });
