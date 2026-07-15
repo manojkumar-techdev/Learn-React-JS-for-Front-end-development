@@ -175,3 +175,14 @@ function calculate(a, b, callback) {
 calculate(10, 20, (x, y) => {
   console.log(x * y);
 });
+
+
+// callback with API fetch
+fetch("https://jsonplaceholder.typicode.com/users")
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
