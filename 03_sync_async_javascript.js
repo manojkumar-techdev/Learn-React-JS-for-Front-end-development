@@ -122,3 +122,24 @@ promise
   .catch((error) => {
     console.log("Error:", error);
   });
+
+
+// async await with try catch
+function fetchData() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      reject("Network Error");
+    }, 1000);
+  });
+}
+
+async function getData() {
+  try {
+    const result = await fetchData();
+    console.log(result);
+  } catch (error) {
+    console.log("Error:", error);
+  }
+}
+
+getData();
