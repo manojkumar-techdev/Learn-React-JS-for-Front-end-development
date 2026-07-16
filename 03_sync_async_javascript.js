@@ -231,3 +231,15 @@ const fruits = ['apple', 'banana'];
 const groceryList = [...veggies, ...fruits, 'bread']; // Spread both arrays and add another item
 
 console.log(groceryList); // Output: ['carrot', 'broccoli', 'apple', 'banana', 'bread']
+
+
+// function sum(x, y, z) {
+  return x + y + z;
+}
+
+const numbers = [1, 2, 3];
+
+// Instead of sum(numbers[0], numbers[1], numbers[2])...
+const result = sum(...numbers); // Spreads numbers into arguments: sum(1, 2, 3)
+
+console.log(result); // Output: 6
