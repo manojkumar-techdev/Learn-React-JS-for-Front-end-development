@@ -224,3 +224,10 @@ const fruits = ['apple', 'banana'];
 const groceryList = [...veggies, ...fruits, 'bread']; // Spread both arrays and add another item
 
 console.log(groceryList); // Output: ['carrot', 'broccoli', 'apple', 'banana', 'bread']
+
+
+// const veggies = ['carrot', 'broccoli'];
+const fruits = ['apple', 'banana'];
+const groceryList = [...veggies, ...fruits, 'bread']; // Spread both arrays and add another item
+
+console.log(groceryList); // Output: ['carrot', 'broccoli', 'apple', 'banana', 'bread']
