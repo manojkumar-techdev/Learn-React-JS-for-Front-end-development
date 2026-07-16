@@ -207,3 +207,20 @@ async function start() {
 
 start();
 console.log("Function called");
+
+
+
+// spreading arrays
+const originalFruits = ['apple', 'banana', 'cherry'];
+const newFruits = [...originalFruits]; // Spread elements into a new array
+
+console.log(newFruits); // Output: ['apple', 'banana', 'cherry']
+console.log(newFruits === originalFruits); // Output: false (It's a new array, not the same one)
+
+
+
+// const veggies = ['carrot', 'broccoli'];
+const fruits = ['apple', 'banana'];
+const groceryList = [...veggies, ...fruits, 'bread']; // Spread both arrays and add another item
+
+console.log(groceryList); // Output: ['carrot', 'broccoli', 'apple', 'banana', 'bread']
