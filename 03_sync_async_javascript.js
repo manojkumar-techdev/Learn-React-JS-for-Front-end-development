@@ -247,3 +247,14 @@ const newUser = { ...originalUser }; // Spread properties into a new object
 
 console.log(newUser); // Output: { name: 'Alice', age: 30 }
 console.log(newUser === originalUser); // Output: false (It's a new object)
+
+
+// Merging Objects: Combine properties from multiple objects. If keys clash, the later object's property wins.
+const userDetails = { name: 'Bob', city: 'New York' };
+const userStatus = { loggedIn: true, name: 'Robert' }; // Note the 'name' clash
+
+const mergedUser = { ...userDetails, ...userStatus, isAdmin: false };
+// Properties are applied in order: name:'Bob', city:'New York', loggedIn:true, name:'Robert', isAdmin:false
+
+console.log(mergedUser);
+// Output: { name: 'Robert', city: 'New York', loggedIn: true, isAdmin: false }
