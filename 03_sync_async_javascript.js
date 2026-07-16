@@ -256,5 +256,22 @@ const userStatus = { loggedIn: true, name: 'Robert' }; // Note the 'name' clash
 const mergedUser = { ...userDetails, ...userStatus, isAdmin: false };
 // Properties are applied in order: name:'Bob', city:'New York', loggedIn:true, name:'Robert', isAdmin:false
 
+
+// The Rest Operator (...) - Gathering Things Together
+// The '...args' gathers all remaining arguments into an array named 'args'
+function logMessages(source, ...messages) {
+  console.log(`Source: ${source}`);
+  console.log('Messages:');
+  messages.forEach(msg => console.log(`- ${msg}`));
+}
+
+logMessages('System', 'User logged in', 'Data loaded', 'Ready');
+// Output:
+// Source: System
+// Messages:
+// - User logged in
+// - Data loaded
+// - Ready
+
 console.log(mergedUser);
 // Output: { name: 'Robert', city: 'New York', loggedIn: true, isAdmin: false }
