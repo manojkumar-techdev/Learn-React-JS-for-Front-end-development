@@ -186,3 +186,24 @@ fetch("https://jsonplaceholder.typicode.com/users")
   .catch((error) => {
     console.log(error);
   });
+
+
+// JavaScript Async Functions
+function getData() {
+  return new Promise(resolve => {
+    console.log("Promise started");
+    setTimeout(() => {
+      console.log("Promise resolving");
+      resolve("data");
+    }, 1000);
+  });
+}
+
+async function start() {
+  console.log("Before await");
+  const result = await getData();
+  console.log("After await:", result);
+}
+
+start();
+console.log("Function called");
