@@ -219,6 +219,7 @@ console.log(newFruits === originalFruits); // Output: false (It's a new array, n
 
 
 
+// Combining Arrays: Easily merge multiple arrays.
 // const veggies = ['carrot', 'broccoli'];
 const fruits = ['apple', 'banana'];
 const groceryList = [...veggies, ...fruits, 'bread']; // Spread both arrays and add another item
@@ -226,13 +227,8 @@ const groceryList = [...veggies, ...fruits, 'bread']; // Spread both arrays and 
 console.log(groceryList); // Output: ['carrot', 'broccoli', 'apple', 'banana', 'bread']
 
 
-// const veggies = ['carrot', 'broccoli'];
-const fruits = ['apple', 'banana'];
-const groceryList = [...veggies, ...fruits, 'bread']; // Spread both arrays and add another item
 
-console.log(groceryList); // Output: ['carrot', 'broccoli', 'apple', 'banana', 'bread']
-
-
+// Passing Array Elements as Function Arguments:
 // function sum(x, y, z) {
   return x + y + z;
 }
@@ -243,3 +239,11 @@ const numbers = [1, 2, 3];
 const result = sum(...numbers); // Spreads numbers into arguments: sum(1, 2, 3)
 
 console.log(result); // Output: 6
+
+
+// Copying an Object: Create a new object with the same properties.
+// const originalUser = { name: 'Alice', age: 30 };
+const newUser = { ...originalUser }; // Spread properties into a new object
+
+console.log(newUser); // Output: { name: 'Alice', age: 30 }
+console.log(newUser === originalUser); // Output: false (It's a new object)
