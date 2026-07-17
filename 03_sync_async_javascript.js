@@ -275,3 +275,9 @@ logMessages('System', 'User logged in', 'Data loaded', 'Ready');
 
 console.log(mergedUser);
 // Output: { name: 'Robert', city: 'New York', loggedIn: true, isAdmin: false }
+
+
+// Spread Operatot
+const first = [10, 20];
+const second = [40, 50];
+const finalArray = [5, ...first, 30, ...second, 60];
