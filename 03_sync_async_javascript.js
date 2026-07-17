@@ -292,3 +292,18 @@ function logStuff(id, name, ...otherArgs) {
 
 logStuff(101, 'Widget', 'Blue', true, 50);
 
+
+// Property Overwrites in Object Spreads
+const basicInfo = {
+    name: 'Chris',
+    age: 25
+};
+const contactInfo = {
+    email: 'chris@example.com',
+    name: 'Christopher'
+}; // Note the name conflict
+const userProfile = {
+    ...basicInfo,
+    city: 'London',
+    ...contactInfo
+};
