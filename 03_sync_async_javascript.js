@@ -346,3 +346,9 @@ console.log(city);      // Output: Wonderland
 const { firstName: fName, age: personAge } = person;
 console.log(fName);      // Output: Alice
 console.log(personAge);  // Output: 30
+
+
+// default values
+const { firstName, country = 'Unknown' } = person;
+console.log(firstName); // Output: Alice
+console.log(country);   // Output: Unknown (since 'country' wasn't in the person object)
