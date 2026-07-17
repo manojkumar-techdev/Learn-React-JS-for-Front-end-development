@@ -281,3 +281,14 @@ console.log(mergedUser);
 const first = [10, 20];
 const second = [40, 50];
 const finalArray = [5, ...first, 30, ...second, 60];
+
+
+// rest parameter
+function logStuff(id, name, ...otherArgs) {
+  // What is otherArgs here?
+  console.log(`ID: ${id}, Name: ${name}`);
+  console.log('Other:', otherArgs);
+}
+
+logStuff(101, 'Widget', 'Blue', true, 50);
+
