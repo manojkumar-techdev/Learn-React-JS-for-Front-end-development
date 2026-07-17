@@ -340,3 +340,9 @@ console.log(age);       // Output: 30
 // You can grab any properties you need
 const { city } = person;
 console.log(city);      // Output: Wonderland
+
+
+// renaming variable
+const { firstName: fName, age: personAge } = person;
+console.log(fName);      // Output: Alice
+console.log(personAge);  // Output: 30
