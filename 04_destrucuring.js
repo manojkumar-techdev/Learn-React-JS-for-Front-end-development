@@ -54,3 +54,18 @@ const secondColor = colors[1];
 
 console.log(firstColor);  // Output: red
 console.log(secondColor); // Output: green
+
+
+
+// Array Destructure - Modern destructuring
+const colors = ['red', 'green', 'blue'];
+
+// Destructuring: Pull out the first two elements into variables
+const [firstColor, secondColor] = colors;
+
+console.log(firstColor);  // Output: red
+console.log(secondColor); // Output: green
+
+// You can grab as many as you need
+const [c1, c2, c3] = colors;
+console.log(c3);          // Output: blue
