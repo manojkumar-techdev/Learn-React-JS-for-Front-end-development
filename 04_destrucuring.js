@@ -29,3 +29,9 @@ console.log(age);       // Output: 30
 // You can grab any properties you need
 const { city } = person;
 console.log(city);      // Output: Wonderland
+
+
+// Object Destructuring - Renaming Values
+const { firstName: fName, age: personAge } = person;
+console.log(fName);      // Output: Alice
+console.log(personAge);  // Output: 30
