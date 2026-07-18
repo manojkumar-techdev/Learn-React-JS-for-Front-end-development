@@ -42,3 +42,15 @@ console.log(personAge);  // Output: 30
 const { firstName, country = 'Unknown' } = person;
 console.log(firstName); // Output: Alice
 console.log(country);   // Output: Unknown (since 'country' wasn't in the person object)
+
+
+
+// Array Destructuring - Old Method
+const colors = ['red', 'green', 'blue'];
+
+// To get the first two colors into variables:
+const firstColor = colors[0];
+const secondColor = colors[1];
+
+console.log(firstColor);  // Output: red
+console.log(secondColor); // Output: green
