@@ -324,31 +324,3 @@ console.log(firstName); // Output: Alice
 console.log(age);       // Output: 30
 
 
-// modern destructuring
-const person = {
-  firstName: 'Alice',
-  age: 30,
-  city: 'Wonderland'
-};
-
-// Destructuring: Pull out firstName and age into variables
-const { firstName, age } = person;
-
-console.log(firstName); // Output: Alice
-console.log(age);       // Output: 30
-
-// You can grab any properties you need
-const { city } = person;
-console.log(city);      // Output: Wonderland
-
-
-// renaming variable
-const { firstName: fName, age: personAge } = person;
-console.log(fName);      // Output: Alice
-console.log(personAge);  // Output: 30
-
-
-// default values
-const { firstName, country = 'Unknown' } = person;
-console.log(firstName); // Output: Alice
-console.log(country);   // Output: Unknown (since 'country' wasn't in the person object)
