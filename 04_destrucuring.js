@@ -69,3 +69,12 @@ console.log(secondColor); // Output: green
 // You can grab as many as you need
 const [c1, c2, c3] = colors;
 console.log(c3);          // Output: blue
+
+
+// Skipping elements
+const numbers = [10, 20, 30, 40, 50];
+
+// Get the first and third numbers
+const [first, , third] = numbers;
+console.log(first); // Output: 10
+console.log(third); // Output: 30 (skipped index 1)
