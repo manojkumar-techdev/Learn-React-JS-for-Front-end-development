@@ -92,3 +92,9 @@ console.log(otherScores); // Output: [ 95, 88, 75, 60 ]
 
 
 
+// default values
+const settings = ['dark'];
+const [theme = 'light', fontSize = 16] = settings;
+
+console.log(theme);    // Output: dark (value from array is used)
+console.log(fontSize); // Output: 16 (default value is used as there's no second element)
