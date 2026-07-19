@@ -98,3 +98,12 @@ const [theme = 'light', fontSize = 16] = settings;
 
 console.log(theme);    // Output: dark (value from array is used)
 console.log(fontSize); // Output: 16 (default value is used as there's no second element)
+
+
+
+// Destructuring sysntax for objects
+const user = {
+  id: 101,
+  username: 'coder_joe',
+  email: 'joe@example.com'
+};
