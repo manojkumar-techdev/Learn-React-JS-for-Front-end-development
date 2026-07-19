@@ -1,0 +1,4 @@
+// Map() Method in Javascript
+let numbers = [5, 10, 15];
+let divided = numbers.map(num => num / 5);
+console.log(divided); // Output - [1, 2, 3]
