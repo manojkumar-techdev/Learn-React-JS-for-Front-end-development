@@ -78,3 +78,17 @@ const numbers = [10, 20, 30, 40, 50];
 const [first, , third] = numbers;
 console.log(first); // Output: 10
 console.log(third); // Output: 30 (skipped index 1)
+
+
+
+// reset syntax
+const scores = [100, 95, 88, 75, 60];
+
+// Get the top score, and put the rest into another array
+const [topScore, ...otherScores] = scores;
+
+console.log(topScore);    // Output: 100
+console.log(otherScores); // Output: [ 95, 88, 75, 60 ]
+
+
+
