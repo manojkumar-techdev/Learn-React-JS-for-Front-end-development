@@ -107,3 +107,15 @@ const user = {
   username: 'coder_joe',
   email: 'joe@example.com'
 };
+
+
+// spread operators
+// Context 1: Function definition
+function process(...items) { /* ... */ }
+
+// Context 2: Inside an array literal
+const arr1 = [1, 2];
+const arr2 = [...arr1, 3];
+
+// Context 3: Object destructuring
+const { x, ...coords } = { x: 1, y: 2, z: 3 };
